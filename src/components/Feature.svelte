@@ -9,4 +9,7 @@
 </div>
 
 <style>
+    div{
+        display: grid;
+    }
 </style>

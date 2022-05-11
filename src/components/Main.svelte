@@ -37,5 +37,6 @@
 
     img {
         mix-blend-mode: multiply;
+        -webkit-user-drag: none;
     }
 </style>

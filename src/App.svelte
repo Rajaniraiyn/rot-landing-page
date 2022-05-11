@@ -34,5 +34,7 @@
     z-index: -99999;
     width: 100vw;
     height: 100vh;
+    -webkit-user-drag: none;
+    pointer-events: none;
   }
 </style>
