@@ -37,9 +37,11 @@
 
 <style>
     div {
-        display: grid;
+        display: flex;
         gap: 1.5rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
     }
 
     .gradient{
@@ -48,6 +50,7 @@
         font-size: 35px;
         background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 </style>
