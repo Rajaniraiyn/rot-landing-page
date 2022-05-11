@@ -1,8 +1,11 @@
 <script lang="ts">
     export let noBorder = false;
+    export let hasIcon = false;
 </script>
 
-<button class:no-border={noBorder}> <slot /></button>
+<button class:no-border={noBorder} class:has-icon={hasIcon}>
+        <slot />
+</button>
 
 <style>
     button {
@@ -33,5 +36,10 @@
             rgba(87, 115, 255, 1) 46.88%,
             rgba(255, 0, 122, 1) 100%
         );
+    }
+    .has-icon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
     }
 </style>

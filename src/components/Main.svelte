@@ -1,5 +1,6 @@
 <script lang="ts">
     import down from "../assets/icons8-down.gif";
+    import RightArrow from "../assets/right-arrow.svg";
     import Button from "./Button.svelte";
 </script>
 
@@ -7,8 +8,11 @@
     <span>A dedicated platform for</span>
     <span class="gradient">Competitive gaming</span>
     <p>A PLATFORM FOR ALL GAMERS TO CONNECT, INTRACT AND WIN MORE</p>
-    <Button>Let's go</Button>
-    <img src={down} alt="" />
+    <Button hasIcon>
+        Let's go
+        <img src={RightArrow} alt="right arrow" />
+    </Button>
+    <img src={down} alt="" class="scroll-to-down" />
 </header>
 
 <style>
@@ -36,7 +40,7 @@
         text-transform: capitalize;
     }
 
-    img {
+    .scroll-to-down {
         mix-blend-mode: multiply;
         -webkit-user-drag: none;
     }
