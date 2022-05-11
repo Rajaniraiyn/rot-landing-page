@@ -6,8 +6,8 @@
 
 <div>
     <article>
-        <p>Let’s explore the</p>
-        <h2>Region Of Tournaments</h2>
+        <p class="head">Let’s explore the</p>
+        <h2 class="gradient">Region Of Tournaments</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             purus odio tempor rutrum...
@@ -46,5 +46,19 @@
         border-image: linear-gradient(#00f0ff, #5773ff, #ff007a);
         border-image-slice: 1;
         border-radius: 51px;
+    }
+    article{
+        text-align: center;
+        line-height: 1.6;
+    }
+    .gradient{
+        font-weight: 800;
+        font-size: 35px;
+        background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .head{
+        font-size: 35px;
     }
 </style>
