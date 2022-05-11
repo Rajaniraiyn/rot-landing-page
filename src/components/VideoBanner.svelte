@@ -18,7 +18,9 @@
         <video src={Video}>
             <track kind="captions" />
         </video>
-        <img src={PlayButton} alt="" />
+        <div class="controls">
+            <img src={PlayButton} alt="" />
+        </div>
     </section>
 </div>
 
@@ -33,8 +35,11 @@
         position: relative;
         margin-inline: min(7.5em, 30vw);
     }
-    section img {
+    section .controls {
         position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
     }
     section:last-child {
         justify-content: center;
@@ -42,23 +47,37 @@
         z-index: 1;
     }
     section video {
-        border: 6px solid transparent;
-        border-image: linear-gradient(#00f0ff, #5773ff, #ff007a);
-        border-image-slice: 1;
-        border-radius: 51px;
+        border-radius: 2em;
+        --color-bg: #3a346e;
+        background: linear-gradient(var(--color-bg), var(--color-bg))
+                padding-box,
+            linear-gradient(
+                    90deg,
+                    rgba(0, 240, 255, 1) 0%,
+                    rgba(87, 115, 255, 1) 46.88%,
+                    rgba(255, 0, 122, 1) 100%
+                )
+                border-box;
+        border: 4px solid transparent;
     }
-    article{
+    article {
         text-align: center;
         line-height: 1.6;
     }
-    .gradient{
+    .gradient {
         font-weight: 800;
         font-size: 35px;
-        background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
+        background-image: linear-gradient(
+            90deg,
+            rgba(0, 240, 255, 1) 0%,
+            rgba(87, 115, 255, 1) 20%,
+            rgba(255, 0, 70, 1) 88%
+        );
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .head{
+    .head {
         font-size: 35px;
     }
 </style>
