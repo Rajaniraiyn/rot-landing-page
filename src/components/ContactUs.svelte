@@ -36,6 +36,15 @@
 
     h2 {
         font-size: 3.75em;
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            #00f0ff 0%,
+            #5773ff 46.87%,
+            #ff007a 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     div form {
@@ -66,6 +75,18 @@
         border-radius: 50px;
         padding: 0 2em;
         color: white;
+        --color-bg: #0f0b30;
+
+        background: linear-gradient(90deg, var(--color-bg), var(--color-bg))
+                padding-box,
+            linear-gradient(
+                    90deg,
+                    rgb(0, 240, 255) 0%,
+                    rgb(87, 115, 255) 46.88%,
+                    rgb(255, 0, 122) 100%
+                )
+                border-box;
+        border: 4px solid transparent;
     }
 
     textarea {

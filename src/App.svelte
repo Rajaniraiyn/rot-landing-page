@@ -37,6 +37,8 @@
   
   div {
     margin-inline: 5em;
+    display: grid;
+    gap: 5em;
   }
 
   div,

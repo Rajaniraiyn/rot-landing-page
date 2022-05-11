@@ -33,20 +33,29 @@
 
     section {
         position: relative;
-        margin-inline: min(7.5em, 30vw);
+        /* margin-inline: min(7.5em, 30vw); */
     }
-    section .controls {
+
+    .controls {
         position: absolute;
         inset: 0;
         display: grid;
         place-items: center;
     }
+
+    .controls img {
+        max-width: 10%;
+    }
+
     section:last-child {
+        display: grid;
         justify-content: center;
         align-items: center;
         z-index: 1;
     }
+
     section video {
+        max-width: calc(100vw - 10em);
         border-radius: 2em;
         --color-bg: #3a346e;
         background: linear-gradient(var(--color-bg), var(--color-bg))
@@ -60,10 +69,12 @@
                 border-box;
         border: 4px solid transparent;
     }
+    
     article {
         text-align: center;
         line-height: 1.6;
     }
+
     .gradient {
         font-weight: 800;
         font-size: 35px;
@@ -77,6 +88,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
     .head {
         font-size: 35px;
     }
