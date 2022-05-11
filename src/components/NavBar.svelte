@@ -2,36 +2,41 @@
 </script>
 
 <nav>
-    <div class="logo">ROT</div>
-    <div class="navigation">
-        <ul>
-            <li>Features</li>
-            <li>Products</li>
-            <li>Company</li>
-        </ul>
-    </div>
-    <div class="auth">
-        <button>login</button>
-        <button>Register</button>
-    </div>
+  <div class="logo">ROT</div>
+  <div class="navigation">
+    <ul>
+      <li>Features</li>
+      <li>Products</li>
+      <li>Company</li>
+      <li>Pricing</li>
+      <li>Support</li>
+    </ul>
+  </div>
+  <div class="auth">
+    <button>Login</button>
+    <button>Register</button>
+  </div>
 </nav>
 
 <style>
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-    .navigation > ul {
-        list-style-type: none;
-    }
+  .navigation > ul {
+    list-style-type: none;
+  }
 
-    li {
-        float: left;
-    }
+  li {
+    float: left;
+  }
 
-    li:nth-child(even) {
-        margin-inline: 2em;
-    }
+  li:nth-child(even) {
+    margin-inline: 2em;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
 </style>
