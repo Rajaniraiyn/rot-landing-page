@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-inline: -5.5em;
   }
 
   .navigation > ul {
