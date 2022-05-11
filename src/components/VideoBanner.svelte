@@ -25,7 +25,7 @@
 <style>
     div {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
         gap: 1rem;
     }
 
@@ -33,8 +33,7 @@
         position: relative;
         margin-inline: min(7.5em, 30vw);
     }
-    section img,
-    section video {
+    section img {
         position: absolute;
     }
     section:last-child {
