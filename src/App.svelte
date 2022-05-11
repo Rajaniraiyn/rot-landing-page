@@ -8,6 +8,7 @@
   import AboutSection from "./components/AboutSection.svelte";
   import Host from "./components/Host.svelte";
   import Testimonials from "./components/Testimonials.svelte";
+  import ContactUs from "./components/ContactUs.svelte";
 </script>
 
 <div>
@@ -19,6 +20,7 @@
   <AboutSection />
   <Host />
   <Testimonials />
+  <ContactUs />
 </div>
 <img src={Bg} alt="background" id="bg" />
 

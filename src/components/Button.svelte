@@ -1,10 +1,11 @@
 <script lang="ts">
     export let noBorder = false;
     export let hasIcon = false;
+    let styles = $$props.style;
 </script>
 
-<button class:no-border={noBorder} class:has-icon={hasIcon}>
-        <slot />
+<button class:no-border={noBorder} class:has-icon={hasIcon} style={styles}>
+    <slot />
 </button>
 
 <style>
