@@ -16,11 +16,13 @@
         <button>
             Let's go
         </button>
-        <img src={linkdin} alt=""/>
-        <img src={facebook} alt=""/>
-        <img src={cb} alt=""/>
-        <img src={insta} alt=""/>
-        <img src={twitter} alt="">
+        <div class="imgs">
+            <img src={linkdin} alt=""/>
+            <img src={facebook} alt=""/>
+            <img src={cb} alt=""/>
+            <img src={insta} alt=""/>
+            <img src={twitter} alt="">
+        </div>
     </div>
 
     <div>
@@ -61,6 +63,11 @@
 <style>
     div{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+    }
+    .imgs{
+        display: flex;
+        flex-direction: right;
+        flex-wrap: wrap;
+
     }
 </style>
