@@ -9,6 +9,7 @@
   import Host from "./components/Host.svelte";
   import Testimonials from "./components/Testimonials.svelte";
   import ContactUs from "./components/ContactUs.svelte";
+  import Footer from "./components/Footer.svelte"
 </script>
 
 <div>
@@ -21,6 +22,7 @@
   <Host />
   <Testimonials />
   <ContactUs />
+  <Footer />
 </div>
 <img src={Bg} alt="background" id="bg" />
 
