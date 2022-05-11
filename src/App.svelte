@@ -32,6 +32,11 @@
     background-color: #0f0b30;
     overflow-x: hidden;
   }
+  
+  div {
+    margin-inline: 5em;
+  }
+
   div,
   #bg {
     position: absolute;
