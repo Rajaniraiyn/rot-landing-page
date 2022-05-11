@@ -36,6 +36,15 @@
 
     h2 {
         font-size: 3.75em;
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            #00f0ff 0%,
+            #5773ff 46.87%,
+            #ff007a 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     div form {
