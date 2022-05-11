@@ -27,9 +27,8 @@
         text-transform: uppercase;
         font-weight: 800;
         font-size: 35px;
-        background-image: linear-gradient(90deg, #00f0ff, #5773ff, #ff007a);
+        background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 

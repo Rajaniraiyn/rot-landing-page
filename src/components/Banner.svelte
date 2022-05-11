@@ -4,7 +4,7 @@
 
 <div>
     <img src={Bot} alt="bot" />
-    <p>
+    <p class="gradient">
         A simplified Application to handle all of your events and meet gamers of
         your kind
     </p>
@@ -26,5 +26,13 @@
     div p {
         font-size: 2.5rem;
         font-weight: bold;
+    }
+    .gradient{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 35px;
+        background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 </style>

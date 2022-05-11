@@ -11,5 +11,7 @@
 <style>
     div{
         display: grid;
+        justify-items: center;
+        text-align: center;
     }
 </style>
