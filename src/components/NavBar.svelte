@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Button from "./Button.svelte";
 </script>
 
 <nav>
@@ -13,8 +14,8 @@
     </ul>
   </div>
   <div class="auth">
-    <button>Login</button>
-    <button>Register</button>
+    <Button noBorder>Login</Button>
+    <Button>Register</Button>
   </div>
 </nav>
 
@@ -24,6 +25,7 @@
     align-items: center;
     justify-content: space-around;
     margin-inline: -5.5em;
+    margin-block: 1em;
   }
 
   .navigation > ul {
@@ -37,6 +39,7 @@
   li:nth-child(even) {
     margin-inline: 2em;
   }
+  
   .logo {
     font-size: 1.5em;
   }
