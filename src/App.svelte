@@ -6,6 +6,7 @@
   import Features from "./components/Features.svelte";
   import VideoBanner from "./components/VideoBanner.svelte";
   import AboutSection from "./components/AboutSection.svelte";
+  import Host from "./components/Host.svelte";
 </script>
 
 <div>
@@ -15,6 +16,7 @@
   <Features />
   <VideoBanner />
   <AboutSection />
+  <Host />
 </div>
 <img src={Bg} alt="background" id="bg" />
 
