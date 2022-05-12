@@ -8,7 +8,7 @@
     import RightArrow from "../assets/right-arrow.svg";
 </script>
 
-<div class="grid">
+<footer class="grid">
     <div>
         <h2>ROT</h2>
         <p>
@@ -25,19 +25,19 @@
                 Let's go
                 <img src={RightArrow} alt="right arrow" />
             </Button>
-        </div>    
+        </div>
         <div class="imgs">
-                <img src={linkdin} alt="" />
-                <img src={facebook} alt="" />
-                <img src={cb} alt="" />
-                <img src={insta} alt="" />
-                <img src={twitter} alt="" />
-        </div>    
+            <img src={linkdin} alt="" />
+            <img src={facebook} alt="" />
+            <img src={cb} alt="" />
+            <img src={insta} alt="" />
+            <img src={twitter} alt="" />
+        </div>
     </div>
 
     <div class="links">
         <div>
-        <h3>site</h3>
+            <h3>site</h3>
             <ul>
                 <li>features</li>
                 <li>products</li>
@@ -75,32 +75,67 @@
             </ul>
         </div>
     </div>
-</div>
+</footer>
 
 <style>
+    footer {
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        padding-block: 20px 40px;
+        background-color: transparent;
+    }
+    footer:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(15, 11, 48, 1) 0%,
+            rgba(15, 11, 48, 1) 0%,
+            rgba(9, 7, 28, 1) 45%,
+            rgba(0, 0, 0, 1) 82%
+        );
+        z-index: -999;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
-    .imgs{
+    .imgs {
         display: flex;
         flex-direction: right;
         gap: 1em;
     }
 
-    .grid>div {
+    .grid > div {
         display: flex;
         flex-direction: column;
         gap: 2em;
     }
-    .grid>.links{
+    .grid > .links {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    ul{
+    ul {
         list-style-type: none;
-        padding-inline-start: 0
+        padding-inline-start: 0;
+    }
+    h2 {
+        text-align: left;
+        margin-left: 0.5em;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 35px;
+        background-image: linear-gradient(
+            90deg,
+            rgba(0, 240, 255, 1) 22%,
+            rgba(255, 0, 70, 1) 88%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 </style>

@@ -13,15 +13,17 @@
 </script>
 
 <div>
-  <NavBar />
-  <Main />
-  <Banner />
-  <Features />
-  <VideoBanner />
-  <AboutSection />
-  <Host />
-  <Testimonials />
-  <ContactUs />
+  <main>
+    <NavBar />
+    <Main />
+    <Banner />
+    <Features />
+    <VideoBanner />
+    <AboutSection />
+    <Host />
+    <Testimonials />
+    <ContactUs />
+  </main>
   <Footer />
 </div>
 <img src={Bg} alt="background" id="bg" />
@@ -38,7 +40,7 @@
     scroll-behavior: smooth;
   }
 
-  div {
+  main {
     margin-inline: 5em;
     display: grid;
     gap: 5em;
