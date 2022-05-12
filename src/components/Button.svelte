@@ -10,7 +10,7 @@
 
 <style>
     button {
-        margin: auto;
+        /* margin: auto; */
         position: relative;
         padding: 1em;
         box-sizing: border-box;
