@@ -123,6 +123,16 @@
         list-style-type: none;
         padding-inline-start: 0;
     }
+    li{
+        text-transform: capitalize;
+    }
+    li:hover{
+        transform: scale(1.5);
+        transition: transform 300ms ;
+    }
+    h3{
+        text-transform: capitalize;
+    }
     h2 {
         text-align: left;
         margin-left: 0.5em;
