@@ -9,7 +9,7 @@
   import Host from "./components/Host.svelte";
   import Testimonials from "./components/Testimonials.svelte";
   import ContactUs from "./components/ContactUs.svelte";
-  import Footer from "./components/Footer.svelte"
+  import Footer from "./components/Footer.svelte";
 </script>
 
 <div>
@@ -33,8 +33,11 @@
     color: white;
     background-color: #0f0b30;
     overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
-  
+
   div {
     margin-inline: 5em;
     display: grid;
@@ -53,5 +56,31 @@
     height: 100vh;
     -webkit-user-drag: none;
     pointer-events: none;
+  }
+
+  :root::-webkit-scrollbar {
+    width: 0.85rem;
+  }
+
+  :root::-webkit-scrollbar-thumb {
+    background: #c2bcbc;
+    background-clip: padding-box;
+    border: 0.25rem solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    min-height: 50px;
+  }
+
+  :root::-webkit-scrollbar-track {
+    border: 0;
+    background-color: #0f0b30;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #b0b0b0;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background-color: gray;
   }
 </style>
