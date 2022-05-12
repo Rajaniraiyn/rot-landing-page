@@ -19,6 +19,7 @@
         background-clip: padding-box;
         border: solid 0.25em transparent;
         border-radius: 5em;
+        cursor: pointer;
     }
     .no-border {
         border: 0;
@@ -37,10 +38,20 @@
             rgba(87, 115, 255, 1) 46.88%,
             rgba(255, 0, 122, 1) 100%
         );
+        transition: all 0.4s ease-in-out;
     }
     .has-icon {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
+    }
+
+    button:not(.no-border):hover:before {
+        background: linear-gradient(
+            270deg,
+            rgba(0, 240, 255, 1) 0%,
+            rgba(87, 115, 255, 1) 46.88%,
+            rgba(255, 0, 122, 1) 100%
+        );
     }
 </style>

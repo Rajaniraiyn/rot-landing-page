@@ -34,6 +34,7 @@
 
   li {
     float: left;
+    cursor: pointer;
   }
 
   li:nth-child(even) {
