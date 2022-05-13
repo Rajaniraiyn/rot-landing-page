@@ -1,5 +1,6 @@
 <script lang="ts">
-    import down from "../assets/icons8-down.gif";
+    // import down from "../assets/icons8-down.gif";
+    import down from "../assets/down.webp"
     import RightArrow from "../assets/right-arrow.svg";
     import Button from "./Button.svelte";
 </script>
@@ -42,7 +43,7 @@
     }
 
     .scroll-to-down {
-        mix-blend-mode: multiply;
+        mix-blend-mode: lighten;
         -webkit-user-drag: none;
     }
 </style>
