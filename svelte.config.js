@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite'
 import sveltePreprocess from 'svelte-preprocess'
 
-export default defineConfig({
-  root: "./",
+export default {
+  kit: {
+    amp: true
+  },
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
   preprocess: sveltePreprocess()
-})
+}
