@@ -2,6 +2,21 @@
     import Img from "../assets/video-thumbnail.png";
     import PlayButton from "../assets/playbutton.svg";
     import Video from "../assets/dummy-video.mp4";
+
+    let video;
+    let playing = false;
+
+    function play() {
+        video.play();
+        playing = true;
+        video.controls = true;
+    }
+
+    function pause() {
+        video.pause()
+        playing = false;
+        video.controls = false;
+    }
 </script>
 
 <div>
@@ -15,12 +30,14 @@
     </article>
 
     <section>
-        <video src={Video}>
+        <video src={Video} bind:this={video} on:click={pause}>
             <track kind="captions" />
         </video>
-        <div class="controls">
-            <img src={PlayButton} alt="" />
-        </div>
+        {#if !playing}
+            <div class="controls">
+                <img src={PlayButton} alt="" on:click={play} />
+            </div>
+        {/if}
     </section>
 </div>
 
@@ -69,7 +86,7 @@
                 border-box;
         border: 4px solid transparent;
     }
-    
+
     article {
         text-align: center;
         line-height: 1.6;

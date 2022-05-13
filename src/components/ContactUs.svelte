@@ -1,5 +1,9 @@
 <script lang="ts">
     import Button from "./Button.svelte";
+
+    function submit() {
+        alert("Thank you for your submission. \n we'll contact you soon.")
+    }
 </script>
 
 <div>
@@ -9,7 +13,7 @@
         odio tempor rutrum...
     </p>
 
-    <form action="#0">
+    <form on:submit|preventDefault>
         <input type="text" placeholder="Your Name" id="name" />
         <input type="email" placeholder="Your Email Address" id="email" />
         <textarea
@@ -21,6 +25,7 @@
         />
         <Button
             style="grid-area: 3 / 2 / 4 / 4; padding: 0.75em 4em; font-size: 2em; font-weight: bold;"
+            on:click={submit}
         >
             Submit
         </Button>
