@@ -19,5 +19,26 @@
         padding: 3em 10em;
         border: 0.5em solid #ffffff;
         border-radius: 4em;
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        background-color: #0f0b30bf;
+        border: solid 0.25em transparent;
+    }
+
+    div:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        margin: -0.25em;
+        border-radius: inherit;
+        --deg: 90deg;
+        background: linear-gradient(
+            var(--deg),
+            rgba(0, 240, 255, 1) 0%,
+            rgba(87, 115, 255, 1) 46.88%,
+            rgba(255, 0, 122, 1) 100%
+        );
     }
 </style>
