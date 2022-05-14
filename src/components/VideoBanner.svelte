@@ -13,7 +13,7 @@
     }
 
     function pause() {
-        video.pause()
+        video.pause();
         playing = false;
         video.controls = false;
     }
@@ -24,8 +24,8 @@
         <p class="head">Let’s explore the</p>
         <h2 class="gradient">Region Of Tournaments</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            purus odio tempor rutrum...
+            ROT is a high-tech competitive gaming platform for all the gamers to
+            showcase and establish their skills
         </p>
     </article>
 

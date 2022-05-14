@@ -4,10 +4,10 @@
     const Testimonials = [
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
+                "The idea is too good. Every players want these features. The number of tournaments will increase by this. I’ll promote it for free and will ask other creators to share it too ... if you manage to do it",
             profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
+            profileName: "PES IS LIFE",
+            profileDetails: "PES/eFootball Youtuber",
         },
         {
             content:
@@ -82,6 +82,7 @@
     }
     div div {
         display: grid;
+        place-items: stretch;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
         padding: 2em;

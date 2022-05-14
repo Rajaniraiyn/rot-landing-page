@@ -1,12 +1,13 @@
 <script lang="ts">
     import AboutBanner from "./AboutBanner.svelte";
     import EsportsPic from "../assets/Esports.svg";
+    import GamersPic from "../assets/Gamers.svg";
     const about = [
         {
             title: "About",
-            subtitle: "Esports and Evenets",
+            subtitle: "Esports and Events",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae quam sit scelerisque enim in sed diam nec, blandit. Amet tellus massa sed iaculis. Mauris, curabitur scelerisque sagittis posuere mollis. In dolor neque et vitae lectus vulputate pellentesque luctus.",
+                "ROT offers a stabilized platform to conduct and participate in the Esports events and other competitive gaming event categories like Speed running , PvP etc... .Esports is a form of competition using video games. Esports often takes the form of organized, multiplayer video game competitions, particularly between professional players, individually or as teams. ",
             learnMoreLink: "#",
             image: EsportsPic,
         },
@@ -14,9 +15,9 @@
             title: "You can also get",
             subtitle: "Gamers for Teams",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae quam sit scelerisque enim in sed diam nec, blandit. Amet tellus massa sed iaculis. Mauris, curabitur scelerisque sagittis posuere mollis. In dolor neque et vitae lectus vulputate pellentesque luctus.",
+                "ROT provides talented individuals who are experienced in their domain game to establish themselves in their field by getting paid to play for a team. Teams who are looking for skilled players in their esports team can approach these professional players verified by the ROT Inc. ROT also provides VoIP facilities to communicate between players",
             learnMoreLink: "#",
-            image: EsportsPic,
+            image: GamersPic,
             alternate: true,
         },
     ];

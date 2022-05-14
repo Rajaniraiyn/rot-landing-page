@@ -36,23 +36,26 @@
     div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        justify-items: center;
-        align-items: center;
+        gap: 1.5em;
+        /* justify-items: center;
+        align-items: center; */
+        place-items: center;
+        margin-bottom: 1.5em;
     }
 
     article {
         border-left: solid 0.25rem #ffffff;
-        padding-left: 2.5em;
+        padding-left: 2em;
     }
 
     img {
-        padding-inline: 5em;
+        width: 100%;
+        height: auto;
     }
 
     h3,
     h2 {
-        font-size: 1.5em;
+        font-size: clamp(1em, 10%, 3em);
         font-weight: bold;
         margin-bottom: 1rem;
     }
@@ -68,5 +71,19 @@
         color: #fff;
         text-decoration: none;
         margin-top: 1rem;
+    }
+
+    h3 {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            #00f0ff 0%,
+            #5773ff 46.87%,
+            #ff007a 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 </style>

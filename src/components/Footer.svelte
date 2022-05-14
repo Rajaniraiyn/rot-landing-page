@@ -84,6 +84,9 @@
         text-align: center;
         padding-block: 20px 40px;
         background-color: transparent;
+        /*Subject to change*/
+        margin-top: 5em;
+        padding-left: 5em;
     }
     footer:before {
         content: "";
@@ -123,14 +126,14 @@
         list-style-type: none;
         padding-inline-start: 0;
     }
-    li{
+    li {
         text-transform: capitalize;
     }
-    li:hover{
+    li:hover {
         transform: scale(1.5);
-        transition: transform 300ms ;
+        transition: transform 300ms;
     }
-    h3{
+    h3 {
         text-transform: capitalize;
     }
     h2 {

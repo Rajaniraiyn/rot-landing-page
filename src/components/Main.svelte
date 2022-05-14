@@ -1,6 +1,6 @@
 <script lang="ts">
     // import down from "../assets/icons8-down.gif";
-    import down from "../assets/down.webp"
+    import down from "../assets/down.webp";
     import RightArrow from "../assets/right-arrow.svg";
     import Button from "./Button.svelte";
 </script>
@@ -8,7 +8,7 @@
 <header>
     <span>A dedicated platform for</span>
     <span class="gradient">Competitive gaming</span>
-    <p>A PLATFORM FOR ALL GAMERS TO CONNECT, INTRACT AND WIN MORE</p>
+    <p>A Platform For All Gamers To Connect, Interact And Win More</p>
     <Button hasIcon>
         Let's go
         <img src={RightArrow} alt="right arrow" />
@@ -32,12 +32,21 @@
         text-transform: uppercase;
         font-weight: 800;
         font-size: 35px;
-        background-image: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(87,115,255,1) 20%, rgba(255,0,70,1) 88%);
+        background-image: linear-gradient(
+            90deg,
+            rgba(0, 240, 255, 1) 0%,
+            rgba(87, 115, 255, 1) 20%,
+            rgba(255, 0, 70, 1) 88%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
+    p {
+        font-size: 1.2em;
+        margin: 0;
+    }
     span {
         text-transform: capitalize;
     }

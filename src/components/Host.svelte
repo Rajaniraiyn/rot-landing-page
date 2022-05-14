@@ -5,18 +5,21 @@
 <div>
     <h2>Become a Host and Host Your Events With Ease</h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit est ac
-        nulla faucibus proin nisl augue. Vestibulum sem scelerisque suspendisse
-        praesent pretium non. At mattis bibendum ut sed praesent. Nam at id
-        elementum gravida.
+        ROT offers various tournament hosts to host their tournaments with ease.
+        ROT focuses on developing a peaceful and a competitive environment among
+        gamers and hosts minimizing most of the difficulties tournament hosts
+        face while hosting on other platforms. It has improved security to avoid
+        unethical players from the tournament. Manage all your tournaments in
+        one place whatever their structures and matches formats. Decide how
+        players participate in your tournaments.
     </p>
     <Button>Learn More</Button>
 </div>
 
 <style>
     div {
-        margin: 10em 15em;
-        padding: 3em 10em;
+        margin: 10em 12em;
+        padding: 3em 6em;
         border: 0.5em solid #ffffff;
         border-radius: 4em;
         position: relative;
@@ -40,5 +43,23 @@
             rgba(87, 115, 255, 1) 46.88%,
             rgba(255, 0, 122, 1) 100%
         );
+    }
+
+    h2 {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            #00f0ff 0%,
+            #5773ff 46.87%,
+            #ff007a 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
     }
 </style>
