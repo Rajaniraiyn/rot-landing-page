@@ -18,7 +18,7 @@
 
 <style>
     div {
-        margin: 10em 12em;
+        margin: 10em clamp(6em, 50%, 10vw);
         padding: 3em 6em;
         border: 0.5em solid #ffffff;
         border-radius: 4em;
