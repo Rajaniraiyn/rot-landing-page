@@ -6,11 +6,11 @@
   <div class="logo">ROT</div>
   <div class="navigation">
     <ul>
-      <li>Features</li>
-      <li>Products</li>
-      <li>Company</li>
-      <li>Pricing</li>
-      <li>Support</li>
+      <li><a href="">Features</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Company</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">Support</a></li>
     </ul>
   </div>
   <div class="auth">
@@ -36,6 +36,22 @@
     float: left;
     cursor: pointer;
   }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:white ;
+  }
+  a:hover::after{
+    width: 100%;
+    transition: width 500ms;
+  }
+  
 
   li:nth-child(even) {
     margin-inline: 2em;
