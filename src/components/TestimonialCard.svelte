@@ -17,7 +17,7 @@
 <style>
     div {
         box-sizing: border-box;
-        padding: 3em;
+        padding: clamp(2em, 50%, 5vw);
         border-radius: 1.25em;
         border: 1px solid #ffffff;
         --color-bg: #0f0b30;

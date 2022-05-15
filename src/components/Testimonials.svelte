@@ -83,9 +83,16 @@
     div div {
         display: grid;
         place-items: stretch;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
         padding: 2em;
         margin-inline: 4.5rem;
+    }
+
+    @media (max-width: 768px) {
+        div > div {
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: auto;
+        }
     }
 </style>
