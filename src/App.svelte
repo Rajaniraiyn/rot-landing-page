@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Route, router } from "tinro";
   import NavBar from "./components/NavBar.svelte";
   import Main from "./components/Main.svelte";
   import Bg from "./assets/bg.png";
@@ -10,9 +11,12 @@
   import Testimonials from "./components/Testimonials.svelte";
   import ContactUs from "./components/ContactUs.svelte";
   import Footer from "./components/Footer.svelte";
+  import Profile from "./components/Profile.svelte";
+
+  router.mode.hash( )
 </script>
 
-<div>
+<Route path="/">
   <main>
     <NavBar />
     <Main />
@@ -25,7 +29,11 @@
     <ContactUs />
   </main>
   <Footer />
-</div>
+</Route>
+<Route path="/profile">
+  <Profile />
+</Route>
+
 <img src={Bg} alt="background" id="bg" />
 
 <style>

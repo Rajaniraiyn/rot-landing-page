@@ -6,7 +6,7 @@
   <div class="logo">ROT</div>
   <div class="navigation">
     <ul>
-      <li><a href="">Features</a></li>
+      <li><a href="/profile">User</a></li>
       <li><a href="">Products</a></li>
       <li><a href="">Company</a></li>
       <li><a href="">Pricing</a></li>
