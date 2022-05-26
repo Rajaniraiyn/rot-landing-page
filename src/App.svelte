@@ -1,37 +1,17 @@
 <script lang="ts">
   import { Route, router } from "tinro";
-  import NavBar from "./components/NavBar.svelte";
-  import Main from "./components/Main.svelte";
   import Bg from "./assets/bg.png";
-  import Banner from "./components/Banner.svelte";
-  import Features from "./components/Features.svelte";
-  import VideoBanner from "./components/VideoBanner.svelte";
-  import AboutSection from "./components/AboutSection.svelte";
-  import Host from "./components/Host.svelte";
-  import Testimonials from "./components/Testimonials.svelte";
-  import ContactUs from "./components/ContactUs.svelte";
-  import Footer from "./components/Footer.svelte";
-  import Profile from "./components/Profile.svelte";
+  import Home from "./components/pages/Home/Home.svelte";
+  import Others from "./components/pages/Others/Others.svelte";
 
-  router.mode.hash( )
+  router.mode.hash();
 </script>
 
 <Route path="/">
-  <main>
-    <NavBar />
-    <Main />
-    <Banner />
-    <Features />
-    <VideoBanner />
-    <AboutSection />
-    <Host />
-    <Testimonials />
-    <ContactUs />
-  </main>
-  <Footer />
+  <Home />
 </Route>
-<Route path="/profile">
-  <Profile />
+<Route path="/profile/*">
+  <Others />
 </Route>
 
 <img src={Bg} alt="background" id="bg" />
@@ -48,13 +28,6 @@
     scroll-behavior: smooth;
   }
 
-  main {
-    margin-inline: 5em;
-    display: grid;
-    gap: 5em;
-  }
-
-  div,
   #bg {
     position: absolute;
     inset: 0;

@@ -1,10 +1,10 @@
 <script lang="ts">
     import Feature from "./Feature.svelte";
-    import f1 from "../assets/f1.svg";
-    import f2 from "../assets/f2.svg";
-    import f3 from "../assets/f3.svg";
-    import f4 from "../assets/f4.svg";
-    import f5 from "../assets/f5.svg";
+    import f1 from "../../../../assets/f1.svg";
+    import f2 from "../../../../assets/f2.svg";
+    import f3 from "../../../../assets/f3.svg";
+    import f4 from "../../../../assets/f4.svg";
+    import f5 from "../../../../assets/f5.svg";
     const features = [
         {
             icon: f1,

@@ -1,7 +1,7 @@
 <script lang="ts">
     import AboutBanner from "./AboutBanner.svelte";
-    import EsportsPic from "../assets/Esports.svg";
-    import GamersPic from "../assets/Gamers.svg";
+    import EsportsPic from "../../../../assets/Esports.svg";
+    import GamersPic from "../../../../assets/Gamers.svg";
     const about = [
         {
             title: "About",

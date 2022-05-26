@@ -7,10 +7,10 @@
   <div class="navigation">
     <ul>
       <li><a href="/profile">User</a></li>
-      <li><a href="">Products</a></li>
-      <li><a href="">Company</a></li>
-      <li><a href="">Pricing</a></li>
-      <li><a href="">Support</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/company">Company</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/support">Support</a></li>
     </ul>
   </div>
   <div class="auth">

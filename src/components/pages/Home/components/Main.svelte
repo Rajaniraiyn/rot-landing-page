@@ -1,7 +1,7 @@
 <script lang="ts">
-    // import down from "../assets/icons8-down.gif";
-    import down from "../assets/down.webp";
-    import RightArrow from "../assets/right-arrow.svg";
+    // import down from "../../../../assets/icons8-down.gif";
+    import down from "../../../../assets/down.webp";
+    import RightArrow from "../../../../assets/right-arrow.svg";
     import Button from "./Button.svelte";
 </script>
 

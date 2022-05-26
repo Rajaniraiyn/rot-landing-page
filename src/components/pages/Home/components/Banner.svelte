@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Bot from "../assets/bot.svg";
+    import Bot from "../../../../assets/bot.svg";
 </script>
 
 <div>

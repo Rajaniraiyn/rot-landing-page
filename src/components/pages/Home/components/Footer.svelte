@@ -1,11 +1,11 @@
 <script lang="ts">
-    import linkdin from "../assets/linkdin.svg";
-    import facebook from "../assets/facebook.svg";
-    import cb from "../assets/cb.svg";
-    import insta from "../assets/insta.svg";
-    import twitter from "../assets/twitter.svg";
+    import linkdin from "../../../../assets/linkdin.svg";
+    import facebook from "../../../../assets/facebook.svg";
+    import cb from "../../../../assets/cb.svg";
+    import insta from "../../../../assets/insta.svg";
+    import twitter from "../../../../assets/twitter.svg";
     import Button from "./Button.svelte";
-    import RightArrow from "../assets/right-arrow.svg";
+    import RightArrow from "../../../../assets/right-arrow.svg";
 </script>
 
 <footer class="grid">

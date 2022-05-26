@@ -1,6 +1,6 @@
 <script lang="ts">
     import TestimonialCard from "./TestimonialCard.svelte";
-    import Testimonail1 from "../assets/testimonial1.png";
+    import Testimonail1 from "../../../../assets/testimonial1.png";
     const Testimonials = [
         {
             content:
