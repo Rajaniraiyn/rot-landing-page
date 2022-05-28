@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let content;
-    export let icon;
+    export let content: string;
+    export let icon: string;
 </script>
 
 <div>

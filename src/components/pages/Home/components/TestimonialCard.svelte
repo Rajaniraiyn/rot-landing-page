@@ -1,8 +1,8 @@
 <script lang="ts">
-    export let content;
-    export let profilePic;
-    export let profileName;
-    export let profileDetails;
+    export let content: string;
+    export let profilePic: string;
+    export let profileName: string;
+    export let profileDetails: string;
 </script>
 
 <div>

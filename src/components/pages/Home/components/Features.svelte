@@ -64,6 +64,7 @@
             rgba(255, 0, 70, 1) 88%
         );
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         /*Subjected to Change*/
         margin: 0.5em 1.5rem;
