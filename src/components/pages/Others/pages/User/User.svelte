@@ -1,8 +1,7 @@
 <script lang="ts">
-    
-    import valo from "../../../../../assets/valo.png";
-    import pes from "../../../../../assets/pes.png";
-    import cod from "../../../../../assets/COD.png";
+    import valo from "../../../../../assets/valo.jpg";
+    import pes from "../../../../../assets/pes.jpg";
+    import cod from "../../../../../assets/COD.jpg";
 </script>
 
 <div class="display">
@@ -22,7 +21,7 @@
                     <span class="date">DATE - 22/7/22</span>
                     <span class="time">TIME - 3.45AM</span>
                     <span class="region">REGION - IND</span>
-                    <a href="" />
+                    <a href="#0">Register</a>
                 </div>
             </div>
             <div class="games">
@@ -32,7 +31,7 @@
                     <span class="date">DATE - 22/7/22</span>
                     <span class="time">TIME - 3.45AM</span>
                     <span class="region">REGION - IND</span>
-                    <a href="" />
+                    <a href="#0">Register</a>
                 </div>
             </div>
             <div class="games">
@@ -42,13 +41,12 @@
                     <span class="date">DATE - 22/7/22</span>
                     <span class="time">TIME - 3.45AM</span>
                     <span class="region">REGION - IND</span>
-                    <a href="" />
+                    <a href="#0">Register</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 <style>
     .display {

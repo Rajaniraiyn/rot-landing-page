@@ -7,7 +7,7 @@
 
     const dispatch = createEventDispatcher();
 
-    const click = _ => dispatch("click");
+    const click = () => dispatch("click");
 </script>
 
 <button class:no-border={noBorder} class:has-icon={hasIcon} style={styles} on:click={click}>

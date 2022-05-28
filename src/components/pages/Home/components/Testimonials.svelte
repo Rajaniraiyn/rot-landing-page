@@ -78,6 +78,7 @@
             #ff007a 100%
         );
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     div div {
