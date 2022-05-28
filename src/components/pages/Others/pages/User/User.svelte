@@ -60,12 +60,14 @@
         gap: 1.5em;
         height: 30vh;
         padding: 2.5em;
+        overflow: hidden;
     }
 
     .games {
         text-align: center;
         padding: 1em;
         position: relative;
+        border-radius: 10px;
     }
 
     .games .overlay {
@@ -87,6 +89,7 @@
         inset: 0;
         z-index: -999;
         border-radius: 10px;
+        overflow: hidden;
     }
 
     .time,
