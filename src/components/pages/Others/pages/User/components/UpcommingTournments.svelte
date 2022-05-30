@@ -62,6 +62,11 @@
         overflow: hidden;
         border-radius: 10px;
         background: var(--img-url) top center/100% 100%;
+        transition: background 0.4s;
+    }
+
+    .games:hover {
+        background-size: 110% 110%;
     }
 
     .overlay {
@@ -75,7 +80,6 @@
     span {
         text-align: left;
         margin-left: 1em;
-        mix-blend-mode: exclusion;
     }
 
     h3 {
