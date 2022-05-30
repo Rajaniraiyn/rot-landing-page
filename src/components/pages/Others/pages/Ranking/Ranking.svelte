@@ -158,10 +158,6 @@
         height: auto;
     }
 
-    .dropdown:hover .drop {
-        background-color: #3e8e41;
-    }
-
     .rank{
         table-layout: auto;
         margin-right: 2em;
@@ -201,6 +197,9 @@
             0 0 151px rgb(136, 0, 255);
     }
 
+    tr:nth-child(even) {
+        background-color: #13042f;
+    }
     .table tr:last-of-type{
         border-bottom: 2px solid rgb(82, 11, 99);
     }
