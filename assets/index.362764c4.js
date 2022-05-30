@@ -81,7 +81,7 @@ const ot=function(){const e=document.createElement("link").relList;if(e&&e.suppo
             <td class="svelte-nxvuqj">IND</td></tr> 
         <tr class="you svelte-nxvuqj"><td class="svelte-nxvuqj">10</td> 
             <td class="svelte-nxvuqj">RAJ</td> 
-            <td class="svelte-nxvuqj">IND</td></tr></table>`,u(e,"class","svelte-nxvuqj")},m(t,s){E(t,e,s)},p:N,i:N,o:N,d(t){t&&j(e)}}}class ss extends S{constructor(e){super(),R(this,e,null,ls,D,{})}}var ns="./assets/valo.1ec70247.jpg",rs="./assets/pes.ace977d9.jpg",as="./assets/COD.36801fec.jpg";function is(l){let e,t,s,n,i,r,a,o,c,d,m,h,$,g,p,x,A,k,I,q,B,_,G,Q;return{c(){e=v("div"),t=v("div"),t.innerHTML=`<h1>Wallet</h1> 
+            <td class="svelte-nxvuqj">IND</td></tr></table>`,u(e,"class","svelte-nxvuqj")},m(t,s){E(t,e,s)},p:N,i:N,o:N,d(t){t&&j(e)}}}class ss extends S{constructor(e){super(),R(this,e,null,ls,D,{})}}var ns="./assets/valo.13e78d40.jpg",rs="./assets/pes.83f855de.jpg",as="./assets/COD.462e54e2.jpg";function is(l){let e,t,s,n,i,r,a,o,c,d,m,h,$,g,p,x,A,k,I,q,B,_,G,Q;return{c(){e=v("div"),t=v("div"),t.innerHTML=`<h1>Wallet</h1> 
         <p>INR balance</p> 
         <p>ROT coins</p>`,s=b(),n=v("div"),i=v("h2"),i.textContent="UPCOMING TOURNMENTS",r=b(),a=v("div"),o=v("div"),c=v("img"),m=b(),h=v("div"),h.innerHTML=`<h3 class="svelte-1ldjavo">Valorant</h3> 
                     <span class="date svelte-1ldjavo">DATE - 22/7/22</span> 
