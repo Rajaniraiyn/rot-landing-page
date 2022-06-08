@@ -6,6 +6,7 @@
   import Ranking from "./pages/Ranking/Ranking.svelte";
   import User from "./pages/User/User.svelte";
   import FindGene from "./pages/FindGene/FindGene.svelte";
+  import Profile from "./pages/Profile/Profile.svelte";
 </script>
 
 <div class="main">
@@ -19,6 +20,9 @@
   </Route>
   <Route path="/find">
     <FindGene />
+  </Route>
+  <Route path="/profile">
+    <Profile />
   </Route>
 </div>
 <img src={Bg} alt="background" id="bg" />
