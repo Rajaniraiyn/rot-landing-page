@@ -7,6 +7,8 @@
   import User from "./pages/User/User.svelte";
   import FindGene from "./pages/FindGene/FindGene.svelte";
   import Profile from "./pages/Profile/Profile.svelte";
+  import Team from "./pages/Team/Team.svelte";
+  import Tour from "./pages/Tournments/Tour.svelte";
 </script>
 
 <div class="main">
@@ -23,6 +25,12 @@
   </Route>
   <Route path="/profile">
     <Profile />
+  </Route>
+  <Route path="/team">
+    <Team />
+  </Route>
+  <Route path="/tour">
+    <Tour />
   </Route>
 </div>
 <img src={Bg} alt="background" id="bg" />

@@ -1,6 +1,6 @@
 <script lang="ts">
     // import Image from "../../../../../assets/profile/Profilebackground.svg"
-    import Image from "../../../../../assets/profile/Profilebackground.jpeg"
+    import Image from "../../../../../assets/profile/samp_compressed.jpg"
     const stats =[
         {
             ability:"AGE",
@@ -62,6 +62,7 @@
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
         align-items: center;
+        text-align: center;
         background-color: rgba(250, 235, 215, 0.586);
         border-radius: 3em;
         
