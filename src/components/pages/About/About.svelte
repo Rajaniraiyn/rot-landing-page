@@ -28,7 +28,7 @@
 <style>
     .main{
         display: grid;
-        grid-template-rows:300px 80px 300px;
+        grid-template-rows:300px 80px 240px;
 
     }
     .background{
