@@ -13,7 +13,9 @@
 
 <div class="main">
   <Header />
-  <NavBar />
+  <nav>
+    <NavBar />
+  </nav>
   <Route path="/">
     <User />
   </Route>
@@ -44,6 +46,8 @@
     max-width: 100%;
     height: 100vh;
     position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   #bg {
