@@ -12,25 +12,25 @@
         <div class="dropdown">
             <button class="drop">General</button>
             <div class="dropcontent">
-                <a href="">LINK 1</a>
-                <a href="">LINK 2</a>
-                <a href="">LINK 3</a>
+                <a href="#0">LINK 1</a>
+                <a href="#0">LINK 2</a>
+                <a href="#0">LINK 3</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="drop">Competitive</button>
             <div class="dropcontent">
-                <a href="">LINK 1</a>
-                <a href="">LINK 2</a>
-                <a href="">LINK 3</a>
+                <a href="#0">LINK 1</a>
+                <a href="#0">LINK 2</a>
+                <a href="#0">LINK 3</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="drop">Competitive</button>
             <div class="dropcontent">
-                <a href="">LINK 1</a>
-                <a href="">LINK 2</a>
-                <a href="">LINK 3</a>
+                <a href="#0">LINK 1</a>
+                <a href="#0">LINK 2</a>
+                <a href="#0">LINK 3</a>
             </div>
         </div>
     </div>

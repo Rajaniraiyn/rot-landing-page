@@ -9,6 +9,7 @@
   import Profile from "./pages/Profile/Profile.svelte";
   import Team from "./pages/Team/Team.svelte";
   import Tour from "./pages/Tournments/Tour.svelte";
+  import Esport from "./pages/E-sport/Esport.svelte"
 </script>
 
 <div class="main">
@@ -31,6 +32,9 @@
   </Route>
   <Route path="/tour">
     <Tour />
+  </Route>
+  <Route path="/e-spor">
+    <Esport />
   </Route>
 </div>
 <img src={Bg} alt="background" id="bg" />

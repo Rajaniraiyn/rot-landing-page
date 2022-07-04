@@ -6,9 +6,11 @@
     import twitter from "../../../../assets/twitter.svg";
     import Button from "./Button.svelte";
     import RightArrow from "../../../../assets/right-arrow.svg";
+
+    export let bgColor = "transparent";
 </script>
 
-<footer class="grid">
+<footer class="grid" style:--bg-color={bgColor}>
     <div>
         <h2>ROT</h2>
         <p>
@@ -83,7 +85,7 @@
         color: #ffffff;
         text-align: center;
         padding-block: 20px 40px;
-        background-color: transparent;
+        background-color: var(--bg-color);
         /*Subject to change*/
         margin-top: 5em;
         padding-left: 5em;

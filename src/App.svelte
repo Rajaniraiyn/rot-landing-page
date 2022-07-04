@@ -3,6 +3,7 @@
   import Bg from "./assets/bg.png";
   import Home from "./components/pages/Home/Home.svelte";
   import Others from "./components/pages/Others/Others.svelte";
+  import About from "./components/pages/About/About.svelte"
 
   router.mode.hash();
 </script>
@@ -12,6 +13,9 @@
 </Route>
 <Route path="/profile/*">
   <Others />
+</Route>
+<Route path="/company/*">
+   <About />
 </Route>
 
 <img src={Bg} alt="background" id="bg" />
