@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div>
-            <h3 id="leave">LEAVE</h3>
+            <h3 id="leave"> LEAVE </h3>
         </div>
     </div>
 </div>
@@ -62,5 +62,25 @@
     }
     li{
         list-style-type: none;
+    }
+    #leave{
+        padding: 0.5em;
+        background-color: black;
+        display: inline-block;
+        transform: skewX(-20deg);
+        margin-top: 3em;
+        margin-left: 20em;
+        transition:transform 300ms;
+    }
+    #leave:hover{
+        --deg: 90deg;
+        background: linear-gradient(
+            var(--deg),
+            rgba(0, 240, 255, 1) 0%,
+            rgba(87, 115, 255, 1) 46.88%,
+            rgba(255, 0, 122, 1) 100%
+        );
+        transform: scale(1.2);
+        transition:transform 300ms;
     }
 </style>
