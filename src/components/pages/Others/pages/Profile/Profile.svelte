@@ -40,8 +40,13 @@
         <small style="font-weight: normal; color: grey">#909090</small>
       </h2>
     </div>
-    <div class="rank" style="font-size: 1.5em">
-      Rank: <big style="font-weight: bold">Legendary</big>
+    <div class="bottom-wrapper">
+      <div class="rank" style="font-size: 1.5em">
+        Rank: <big style="font-weight: bold">Legendary</big>
+      </div>
+      <div class="fav-game" style="font-size: 1.5em">
+        Favourite Game: <big style="font-weight: bold">eFootball 2022</big>
+      </div>
     </div>
   </div>
   <div class="main">
@@ -95,6 +100,11 @@ s
     flex: 1 1 auto;
     align-items: center;
     gap: 2em;
+  }
+
+  .bottom-wrapper {
+    display: flex;
+    gap: 3em;
   }
 
   .details {
