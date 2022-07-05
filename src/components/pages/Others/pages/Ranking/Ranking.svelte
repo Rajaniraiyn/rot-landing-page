@@ -177,7 +177,7 @@
     height: 54px;
   }
   .drop {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       90deg,
       rgba(0, 240, 255, 1) 0%,
       rgba(87, 115, 255, 1) 20%,
@@ -190,7 +190,33 @@
     border-radius: 5px;
     cursor: pointer;
     width: 250px;
-    height: 54px;
+    height: 54px; */
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #0f0b30;
+    background-clip: padding-box;
+    border: solid 0.25em transparent;
+    width: 250px;
+    border-radius: 0.2em;
+    cursor: pointer;
+  }
+
+  .drop:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -0.25em;
+    border-radius: inherit;
+    --deg: 90deg;
+    background: linear-gradient(
+      var(--deg),
+      rgba(0, 240, 255, 1) 0%,
+      rgba(87, 115, 255, 1) 46.88%,
+      rgba(255, 0, 122, 1) 100%
+    );
   }
   .dropdown {
     position: relative;
@@ -228,8 +254,8 @@
 
   .rank {
     table-layout: auto;
-    /* margin-right: 2em;
-        margin-left: 2em; */
+    margin-top: 7em;
+    margin-inline: 2em;
   }
   .table {
     border-collapse: collapse;
