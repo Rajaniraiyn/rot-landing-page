@@ -89,14 +89,7 @@
   h3 {
     font-size: 2em;
     font-weight: bold;
-    background: linear-gradient(
-      90deg,
-      #00f0ff 0%,
-      #5773ff 30.87%,
-      #ff007a 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
   }
   .header {
     width: 100%;

@@ -81,6 +81,7 @@
             rgba(255, 0, 122, 1) 100%
         );
         transform: scale(1.2);
+        will-change: background,transform;
         transition:transform 300ms;
     }
 </style>

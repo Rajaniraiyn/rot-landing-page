@@ -7,7 +7,6 @@
         <li><a href="/profile/ranking">RANKING</a></li>
         <li><a href="/profile/profile">PROFILE</a></li>
         <li><a href="/profile/team">TEAM</a></li>
-        <li><a href="/profile/tour">TOURNAMENTS</a></li>
         <li><a href="/profile/e-spor">E-SPORTS</a></li>
         <li><a href="/profile/find">FIND YOUR GENE</a></li>
     </ul>

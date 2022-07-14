@@ -63,17 +63,27 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        background-color: rgba(250, 235, 215, 0.586);
+        color: white;
+        --color-bg: rgba(15, 11, 48, 0.9);
+
+        background: linear-gradient(90deg, var(--color-bg), var(--color-bg))
+                padding-box,
+            linear-gradient(
+                    90deg,
+                    rgba(0, 240, 255, 0.5) 0%,
+                    rgba(87, 115, 255, 0.5) 46.88%,
+                    rgba(255, 0, 122, 0.5) 100%
+                )
+                border-box;
+        border: 4px solid transparent;
         border-radius: 3em;
         
     }
     h3,span{
-        color: rgb(0, 0, 0);
+        color:white;
     }
     .details:hover{
         transform: scale(1.03);
         transition: transform 400ms;
-        transition: background-color 400ms;
-        background-color: antiquewhite;
     }
 </style>
