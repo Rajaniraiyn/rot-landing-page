@@ -9,7 +9,7 @@
   import Profile from "./pages/Profile/Profile.svelte";
   import Team from "./pages/Team/Team.svelte";
   import Tour from "./pages/Tournments/Tour.svelte";
-  import Esport from "./pages/E-sport/Esport.svelte"
+  import Esport from "./pages/E-sport/Esport.svelte";
 </script>
 
 <div class="main">
@@ -58,5 +58,6 @@
     position: absolute;
     inset: 0;
     z-index: -9999;
+    background-repeat: no-repeat;
   }
 </style>
