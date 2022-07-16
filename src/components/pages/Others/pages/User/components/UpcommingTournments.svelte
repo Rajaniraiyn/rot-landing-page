@@ -32,7 +32,7 @@
 
   function santizeImgURL(url: string) {
     url = url.replaceAll("\\", "")
-    if (!url.startsWith("./")) url = "." + url
+    if (!url.startsWith("./")) url = url.replace("/assets", ".")
     return url;
   }
 
