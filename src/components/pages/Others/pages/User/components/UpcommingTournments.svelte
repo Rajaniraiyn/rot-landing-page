@@ -39,7 +39,7 @@
   function bgImage(element: HTMLElement) {
     let url = element.getAttribute("data-img")
     url = santizeImgURL(url)
-    url = `---img-url:url(${url})`
+    url = `--img-url:url(${url})`
     element.setAttribute("style", url)
   }
 </script>
