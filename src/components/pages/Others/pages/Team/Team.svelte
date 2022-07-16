@@ -50,6 +50,9 @@
         border-radius: 10px;
         background: var(--img-url) top center/100% 100%;
         transition: background 0.4s;
+        aspect-ratio: 3/2;
+        max-width: 100%;
+        max-height: 100%;
     }
     .part1:hover{
         background-size: 110% 110%;
