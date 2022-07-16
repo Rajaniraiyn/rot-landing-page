@@ -1,9 +1,23 @@
 <script lang="ts">
     import Bg from "../../../../../assets/Teams/gamer.jpg"
+
+    function santizeImgURL(url: string) {
+    url = url.replaceAll("\\", "");
+    const assets = /^\.\/assets/;
+    url = url.replace(assets, ".");
+    return url;
+  }
+
+  function bgImage(element: HTMLElement) {
+    let url = element.getAttribute("data-img");
+    url = santizeImgURL(url);
+    url = `--img-url:url(${url})`;
+    element.setAttribute("style", url);
+  }
 </script>
 
 <div class="main">
-    <div class="part1" style:--img-url="url({Bg})">
+    <div class="part1" data-img={Bg} use:bgImage>
         <div class="overlay">
             <h2 class="teamname">Rockers</h2>
         </div>

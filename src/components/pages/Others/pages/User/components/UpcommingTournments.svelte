@@ -31,16 +31,17 @@
   ];
 
   function santizeImgURL(url: string) {
-    url = url.replaceAll("\\", "")
-    if (!url.startsWith("./")) url = url.replace("/assets", ".")
+    url = url.replaceAll("\\", "");
+    const assets = /^\.\/assets/;
+    url = url.replace(assets, ".");
     return url;
   }
 
   function bgImage(element: HTMLElement) {
-    let url = element.getAttribute("data-img")
-    url = santizeImgURL(url)
-    url = `--img-url:url(${url})`
-    element.setAttribute("style", url)
+    let url = element.getAttribute("data-img");
+    url = santizeImgURL(url);
+    url = `--img-url:url(${url})`;
+    element.setAttribute("style", url);
   }
 </script>
 
