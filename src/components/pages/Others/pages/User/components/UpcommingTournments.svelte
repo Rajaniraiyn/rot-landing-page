@@ -29,13 +29,27 @@
       link: "#0",
     },
   ];
+
+  function santizeImgURL(url: string) {
+    url = url.replaceAll("\\", "");
+    const assets = /^\.\/assets/;
+    url = url.replace(assets, ".");
+    return url;
+  }
+
+  function bgImage(element: HTMLElement) {
+    let url = element.getAttribute("data-img");
+    url = santizeImgURL(url);
+    url = `--img-url:url(${url})`;
+    element.setAttribute("style", url);
+  }
 </script>
 
 <h2>Upcoming Tournaments</h2>
 <div class="tournments">
   {#each games as game}
     {@const { name, img, date, time, region, link } = game}
-    <div class="games" style="--img-url:url({img})">
+    <div class="games" data-img={img} use:bgImage>
       <!-- <img src={img} alt={name} class="gameimg" /> -->
       <div class="overlay">
         <h3>{name}</h3>
