@@ -24,7 +24,6 @@
     </div>
 </div>
 
-
 <style>
     .main{
         display: grid;
