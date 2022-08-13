@@ -30,6 +30,7 @@
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
+    font-size: clamp(0.5rem, 0.1429rem + 1.1429vw, 1rem);
   }
 
   #bg {
@@ -63,11 +64,11 @@
     background-color: #0f0b30;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
+  :root::-webkit-scrollbar-thumb:hover {
     background-color: #b0b0b0;
   }
 
-  ::-webkit-scrollbar-thumb:active {
+  :root::-webkit-scrollbar-thumb:active {
     background-color: gray;
   }
 </style>

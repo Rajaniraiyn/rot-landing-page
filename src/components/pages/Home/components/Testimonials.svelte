@@ -43,12 +43,6 @@
 </div>
 
 <style>
-    div {
-        display: grid;
-        place-items: center;
-        gap: 3em;
-    }
-
     h2 {
         font-size: 3.75em;
         font-weight: bold;
@@ -63,12 +57,9 @@
         -webkit-text-fill-color: transparent;
     }
     div div {
-        display: grid;
-        place-items: stretch;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
-        padding: 2em;
-        margin-inline: 4.5rem;
+        display: flex;
+        gap: 1em;
+        height: auto;
     }
 
     @media (max-width: 768px) {

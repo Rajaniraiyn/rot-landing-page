@@ -27,8 +27,10 @@
 
 <style>
   main {
-    margin-inline: 5em;
+    margin-inline: clamp(1rem, -1.8571rem + 9.1429vw, 5rem);
     display: grid;
     gap: 5em;
+    place-items: center stretch;
+    justify-content: center;
   }
 </style>
