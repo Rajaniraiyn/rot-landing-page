@@ -9,8 +9,7 @@
 <div>
     <h2>Contact us</h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus
-        odio tempor rutrum...
+			Feel free to drop a message in the contact box. Your each and every feedback is valuable in developing our final product	
     </p>
 
     <form on:submit|preventDefault>

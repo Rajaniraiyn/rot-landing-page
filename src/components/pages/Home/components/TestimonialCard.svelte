@@ -45,6 +45,12 @@
         grid-row-gap: 0px;
         margin-top: 1.5em;
     }
+		
+		img {
+			max-width: 60px;
+			max-height: 60px;
+			border-radius: 50%;
+		}
 
     img {
         grid-area: 1 / 1 / 4 / 2;

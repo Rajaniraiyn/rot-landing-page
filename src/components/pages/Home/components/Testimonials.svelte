@@ -1,49 +1,30 @@
 <script lang="ts">
     import TestimonialCard from "./TestimonialCard.svelte";
-    import Testimonail1 from "../../../../assets/testimonial1.png";
+		import PesIsLife from "../../../../assets/Testimonials/pesislife.jpg";
+		import PesGoat from "../../../../assets/Testimonials/pesgoat.jpg";
     const Testimonials = [
         {
             content:
                 "The idea is too good. Every players want these features. The number of tournaments will increase by this. I’ll promote it for free and will ask other creators to share it too ... if you manage to do it",
-            profilePic: Testimonail1,
+            profilePic: PesIsLife,
             profileName: "PES IS LIFE",
             profileDetails: "PES/eFootball Youtuber",
         },
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
-            profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
+                "ROT can perform very good in the market. This idea has the potential to be big and perform well in the buisness market. The idea of individual hositng is very unique and will have a great impact on the market.",
+            profilePic: PesGoat,
+            profileName: "PES GOAT",
+            profileDetails: "PES/eFootball Youtuber",
         },
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
-            profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
+								"This is a realy great platform for gamers of all skill level to find like minded people. This is really useful especially for a up and coming region like India where Esports is still in its infancy. With time this site can be the huv for all eSports in India and help it reach new heights.",
+            profilePic: PesIsLife,
+            profileName: "Wesley(@snakeeyes)",
+            profileDetails: "Competitive Valorant Player",
         },
-        {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
-            profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
-        },
-        {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
-            profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
-        },
-        {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, duis tellus nec aliquam volutpat. Dui dictum tortor dapibus integer convallis ut facilisi leo semper. Tristique nisl risus tristique nunc quis id elit. Suspendisse felis, tellus in sollicitudin.",
-            profilePic: Testimonail1,
-            profileName: "Saul Ramirez",
-            profileDetails: "CEO, Mirrorly",
-        },
+        
     ];
 </script>
 

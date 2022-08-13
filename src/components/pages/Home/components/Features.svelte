@@ -29,7 +29,7 @@
     ];
 </script>
 
-<section>
+<section id="features">
     <h2 class="gradient">Explore the features!</h2>
     <div>
         {#each features as feature}

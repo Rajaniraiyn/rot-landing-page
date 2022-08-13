@@ -60,7 +60,7 @@
     {/each}
   </div>
 </div>
-s
+
 
 <style>
     .main{
