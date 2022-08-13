@@ -1,36 +1,100 @@
 <script lang="ts">
-    import { Route } from "tinro"
-    import Bg from "../../../assets/company/companybg.jpg"
-    import Footer from "../Home/components/Footer.svelte"
+  import Bg from "../../../assets/company/companybg.jpg";
+
+  // Component Imports
+  import Footer from "../Home/components/Footer.svelte";
+  import NavBar from "../Home/components/NavBar.svelte";
+
+  const content = `The Region of Tournaments was founded by a group of three enthustiastic web developers and passionate programmers from Kumaraguru College of Technology, Jenin Immanuel, Rajanirayin and Siyam Sundar who are doing their freshman year in KCT. The main motive of the developers is to develop a social media platform for gamers to showcase their skills and talents through eSports and tournmaents. This project is part of the PBL framework in our college, as our annual project.`;
 </script>
+
 <div class="main">
-    <div class="background">
-        <img class="img" src={Bg} alt="">
-    </div>
-    <div>
-        <h2 class="team">ROT</h2>
-        <h3>About Us</h3>
-    </div>
-    <div>
-        <p class="abtus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illum vitae delectus optio fugiat iste odio nobis earum magni assumenda fuga, nihil excepturi temporibus, est nostrum possimus reiciendis quis incidunt?
-        Dolorum esse reiciendis rem, a enim provident qui dignissimos, saepe fuga harum commodi vitae tenetur, porro atque quisquam ad? Voluptatem dolore ratione quae exercitationem expedita quisquam sint perspiciatis debitis incidunt?
-        Sint perferendis quidem explicabo corporis provident officia dignissimos quaerat quibusdam recusandae! Exercitationem, eaque fugiat labore id illum, enim consectetur neque itaque magnam impedit consequatur perspiciatis ut mollitia ipsum iste? Ducimus.
-        Iste consectetur quidem ab amet fugit laudantium voluptatibus architecto nisi odit eos. Alias excepturi molestias tenetur possimus dolore, nemo atque molestiae ipsum impedit, consequuntur eum quam inventore error harum corrupti.</p>
-    </div>
-    <div>
-        <Route>
-            <Footer bgColor="black"/>
-        </Route>
-    </div>
+  <div class="background">
+    <img class="img" src={Bg} alt="" />
+  </div>
+  <NavBar />
+  <div class="header-section">
+    <h2 class="team">Region Of Tournaments</h2>
+    <h3>About Us</h3>
+  </div>
+  <div class="content-section">
+    <p class="abtus">{content}</p>
+    <img src={Bg} alt="" />
+  </div>
+  <div>
+    <Footer bgColor="transparent" />
+  </div>
 </div>
 
 <style>
-    .main{
-        display: grid;
-        grid-template-rows:300px 80px 240px;
+  .main {
+    display: grid;
+    gap: 3em;
+    width: 100vw;
+  }
 
-    }
-    .background{
-        overflow-y: hidden;
-    }
+  .background {
+    overflow-y: hidden;
+    height: 100vh;
+    position: absolute;
+    z-index: -99;
+  }
+
+  .background > img {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+    mix-blend-mode: screen;
+  }
+
+  .header-section,
+  .content-section {
+    display: grid;
+    gap: 3em;
+  }
+  .header-section {
+    padding: 0 10em;
+  }
+
+  h2 {
+    font-size: 3.75em;
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      #00f0ff 0%,
+      #5773ff 46.87%,
+      #ff007a 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .content-section {
+    grid-template-columns: 1.1fr 0.9fr;
+    padding: 2em;
+  }
+
+  .content-section > img {
+    width: 500px;
+    height: 350px;
+    border: 10px solid black;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .abtus {
+    padding: 0 5em;
+    font-size: 1.5em;
+  }
+
+  .content-section > img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 </style>
