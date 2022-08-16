@@ -7,9 +7,7 @@
   <div class="navigation">
     <ul>
       <li><a href="/profile">User</a></li>
-      <li><a href="/products">Products</a></li>
       <li><a href="/company">Company</a></li>
-      <li><a href="/pricing">Pricing</a></li>
       <li><a href="/support">Support</a></li>
     </ul>
   </div>
@@ -30,6 +28,7 @@
 
   .navigation > ul {
     list-style-type: none;
+    margin-left: 5em;
   }
 
   li {
