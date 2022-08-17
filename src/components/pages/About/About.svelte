@@ -1,5 +1,6 @@
 <script lang="ts">
   import Bg from "../../../assets/company/companybg.jpg";
+  import Team from "../../../assets/team.jpg"
 
   // Component Imports
   import Footer from "../Home/components/Footer.svelte";
@@ -18,8 +19,8 @@
     <h3>About Us</h3>
   </div>
   <div class="content-section">
-    <p class="abtus">{content}</p>
-    <img src={Bg} alt="" />
+    <div class="content"><p class="abtus">{content}</p></div>
+    <div class="content-img"><img src={Team} alt="" /></div>
   </div>
   <div>
     <Footer bgColor="transparent" />
@@ -49,10 +50,11 @@
 
   .header-section,
   .content-section {
-    display: grid;
     gap: 3em;
   }
+
   .header-section {
+    display: grid;
     padding: 0 10em;
   }
 
@@ -76,25 +78,49 @@
   }
 
   .content-section {
-    grid-template-columns: 1.1fr 0.9fr;
-    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
   }
 
-  .content-section > img {
-    width: 500px;
-    height: 350px;
-    border: 10px solid black;
+  .content-section div {
+    width: 30vw;
+  }
+
+  .content-section .content p {
+    font-size: clamp(1.3em, 15vw, 1.4em);
+  }
+
+  .content-section .content-img {
+    height: 50vh;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .content-img > img {
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
-    transition: transform 0.4s ease-in-out;
+    border: 10px solid black;
   }
 
-  .abtus {
-    padding: 0 5em;
-    font-size: 1.5em;
-  }
-
-  .content-section > img:hover {
+  .content-section .content-img:hover {
     transform: scale(1.05);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .content-section {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-section div {
+      width: 80vw;
+    }
+
+    .content-section .content-img {
+      height: 20vh;
+    }
   }
 </style>
