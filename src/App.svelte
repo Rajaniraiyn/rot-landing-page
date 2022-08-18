@@ -45,11 +45,11 @@
     pointer-events: none;
   }
 
-  :root::-webkit-scrollbar {
+  :global(::-webkit-scrollbar) {
     width: 0.85rem;
   }
 
-  :root::-webkit-scrollbar-thumb {
+  :global(::-webkit-scrollbar-thumb) {
     background: #c2bcbc;
     background-clip: padding-box;
     border: 0.25rem solid transparent;
@@ -58,16 +58,16 @@
     min-height: 50px;
   }
 
-  :root::-webkit-scrollbar-track {
+  :global(::-webkit-scrollbar-track) {
     border: 0;
     background-color: #0f0b30;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
+  :global(::-webkit-scrollbar-thumb:hover) {
     background-color: #b0b0b0;
   }
 
-  ::-webkit-scrollbar-thumb:active {
+  :global(::-webkit-scrollbar-thumb:active) {
     background-color: gray;
   }
 </style>
