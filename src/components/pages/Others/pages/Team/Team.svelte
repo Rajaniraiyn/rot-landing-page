@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Bg from "../../../../../assets/Teams/gamer.jpg"
+  import Bg from "../../../../../assets/Teams/gamer.jpg"
 
     function santizeImgURL(url: string) {
     url = url.replaceAll("\\", "");

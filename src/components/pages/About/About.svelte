@@ -99,8 +99,22 @@
   .content-img > img {
     height: 100%;
     width: 100%;
-    border-radius: 20px;
-    border: 10px solid black;
+      box-sizing: border-box;
+      border-radius: 1.25em;
+      border: 1px solid #ffffff;
+      --color-bg: #0f0b30;
+
+      background: linear-gradient(90deg, var(--color-bg), var(--color-bg))
+              padding-box,
+          linear-gradient(
+                  90deg,
+                  rgb(0, 240, 255) 0%,
+                  rgb(87, 115, 255) 46.88%,
+                  rgb(255, 0, 122) 100%
+              )
+              border-box;
+      border: 4px solid transparent;
+
   }
 
   .content-section .content-img:hover {
@@ -120,7 +134,8 @@
     }
 
     .content-section .content-img {
-      height: 20vh;
+      height: 25vh;
+      width: 50vw;
     }
   }
 </style>
