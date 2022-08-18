@@ -1,37 +1,40 @@
 <script lang="ts">
-    
     import Message from "../../../../assets/message.png";
     import Bell from "../../../../assets/bell.png";
 </script>
 
 <div class="head">
-    <a href="/" class="logo">ROT</a>
-    <div class="search">
-        <input
-            type="search"
-            placeholder="  search..."
-            class="roundsearch"
-        />
+    <div>
+        <a href="/" class="logo">ROT</a>
+        <div class="search">
+            <input type="search" placeholder="search..." class="roundsearch" />
+        </div>
+        <span class="circle" />
     </div>
-    <span class="circle" />
-    <img src={Message} alt="message" class="mess" />
-    <img src={Bell} alt="bell" class="bell" />
+    <div>
+        <img src={Message} alt="message" class="mess" />
+        <img src={Bell} alt="bell" class="bell" />
+    </div>
 </div>
 
 <style>
-        .head {
+    .head {
         display: flex;
         background: black;
         width: 100vw;
         height: 50px;
         align-items: center;
+        justify-content: space-between;
         grid-column: span 2;
+
+        position: fixed;
+        top: 0;
+        padding-inline: 2.5em;
     }
 
     .logo {
         font-size: 1.5em;
         align-items: initial;
-        margin-left: 1.5em;
     }
 
     a {
@@ -52,24 +55,20 @@
         transition: width 500ms;
     }
 
-    .search {
-        margin-left: 3em;
-    }
-
     .roundsearch {
-        border-radius: 15px;
+        border-radius: 50vmax;
         border: 1px #000 solid;
+        padding: 0.25em 0.5em;
     }
 
-    .mess {
-        height: 23px;
-        width: 23px;
-        margin-left: 55em;
+    img {
+        width: 2em;
+        aspect-ratio: 1;
     }
 
-    .bell {
-        height: 23px;
-        width: 23px;
-        margin-left: 2em;
+    .head div {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
     }
 </style>

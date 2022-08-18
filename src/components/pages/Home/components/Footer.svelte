@@ -7,6 +7,12 @@
     import Button from "./Button.svelte";
     import RightArrow from "../../../../assets/right-arrow.svg";
 
+		const scrollToElement = ({ target }) => {
+			const el = document.getElementById(target.href.split("#").at(-1));
+ 	   	el.scrollIntoView({
+      	behavior: 'smooth'
+    	});
+		}
     export let bgColor = "transparent";
 </script>
 
@@ -14,13 +20,7 @@
     <div>
         <h2>ROT</h2>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ab
-            perferendis saepe et minus iste beatae, fugiat numquam, amet, illo
-            non dolorem neque soluta molestias nulla ducimus quos qui modi!
-            Porro, illo. Amet sequi quo eveniet molestiae voluptas modi vel
-            facilis maiores dignissimos deserunt accusantium tempora dolore odio
-            quasi nobis voluptatibus nostrum in ipsa, ducimus excepturi, cumque
-            quam qui ab?
+					ROT is a high-tech competitive gaming platform for all the gamers to showcase and establish their skills. ROT offers a stabilized platform to conduct and participate in the Esports events and other competitive gaming event categories like Speed running , PvP etc...ROT provides talented individuals who are experienced in their domain game to establish themselves in their field by getting paid to play for a team.
         </p>
         <div class="btn">
             <Button hasIcon>
@@ -41,11 +41,9 @@
         <div>
             <h3>site</h3>
             <ul>
-                <li>features</li>
-                <li>products</li>
-                <li>company</li>
-                <li>pricing</li>
-                <li>support</li>
+							<li><a href="#features" data-tinro-ignore on:click|preventDefault={ scrollToElement }>features</a></li>
+              <li><a href="#features" data-tinro-ignore on:click|preventDefault={ scrollToElement }>products</a></li>
+              <li><a href="/company">company</a></li>
             </ul>
         </div>
 
@@ -73,7 +71,7 @@
             <ul>
                 <li>twitter</li>
                 <li>facebook</li>
-                <li>linkdin</li>
+                <li>linkedin</li>
             </ul>
         </div>
     </div>
@@ -152,5 +150,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 </style>

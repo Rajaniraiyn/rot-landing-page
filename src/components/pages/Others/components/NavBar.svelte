@@ -33,8 +33,14 @@
     }
 
     aside {
+        display: grid;
+        place-items: center;
         background: black;
-        width: 250px;
+        width: 260px;
+        height: calc(100vh - 50px);
+
+        position: fixed;
+        bottom: 0;
     }
 
     aside ul {
@@ -46,7 +52,6 @@
         align-items: center;
         margin: 0;
         padding: 0;
-        height: 93.5vh;
     }
 
     

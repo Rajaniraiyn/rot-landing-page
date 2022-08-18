@@ -22,7 +22,7 @@
 <style>
    .main{
     display: grid;
-    grid-template-rows: 350px 200px 200px;
+    grid-template-rows: 1fr 1fr;
     padding: 3em;
     gap: 1em;
    }

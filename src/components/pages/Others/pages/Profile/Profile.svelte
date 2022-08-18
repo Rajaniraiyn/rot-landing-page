@@ -60,7 +60,7 @@
     {/each}
   </div>
 </div>
-s
+
 
 <style>
     .main{
@@ -70,13 +70,6 @@ s
         grid-template-rows: repeat(2,1fr);
         gap: 5em;
         padding: 8em;
-        
-    }
-    .footerimage{
-        position: absolute;
-        inset: 0;
-        z-index: -999;
-        mix-blend-mode: hue;
     }
     .details{
         display: grid;
@@ -108,16 +101,17 @@ s
         transition: transform 400ms;
     }
   .outer-wrapper {
-    padding-inline: 8em;
-    margin-top: 4em;
+    display: grid;
+    place-items: center;
+    margin-top: 1em;
   }
   .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 100%;
-    gap: 5em;
-    padding-block: 5em;
+    gap: 2em;
+    padding-block: 2em;
     /* margin-top: 2em; */
   }
   /* .footerimage {
@@ -162,6 +156,7 @@ s
     border-radius: 1em;
     transition: transform 1000ms ease-in-out;
     transition: background-color 600ms;
+    padding: 1em;
   }
   /* h3,
   span {
