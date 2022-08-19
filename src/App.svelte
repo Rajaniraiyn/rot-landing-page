@@ -4,6 +4,7 @@
   import Home from "./components/pages/Home/Home.svelte";
   import Others from "./components/pages/Others/Others.svelte";
   import About from "./components/pages/About/About.svelte"
+  import Support from "./components/pages/Support/Support.svelte"
 
   router.mode.hash();
 </script>
@@ -17,6 +18,10 @@
 <Route path="/company/*">
    <About />
 </Route>
+<Route path="/support/*">
+   <Support />
+</Route>
+
 
 <img src={Bg} alt="background" id="bg" />
 

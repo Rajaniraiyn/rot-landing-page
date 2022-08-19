@@ -1,13 +1,15 @@
 <script lang="ts">
     import Button from "./Button.svelte";
 
+    export let heading = "Contact Us";
+
     function submit() {
         alert("Thank you for your submission. \n we'll contact you soon.")
     }
 </script>
 
 <div>
-    <h2>Contact us</h2>
+  <h2>{heading}</h2>
     <p>
 			Feel free to drop a message in the contact box. Your each and every feedback is valuable in developing our final product	
     </p>
