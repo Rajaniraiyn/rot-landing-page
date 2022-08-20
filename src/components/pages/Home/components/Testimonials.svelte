@@ -2,6 +2,7 @@
     import TestimonialCard from "./TestimonialCard.svelte";
 		import PesIsLife from "../../../../assets/Testimonials/pesislife.jpg";
 		import PesGoat from "../../../../assets/Testimonials/pesgoat.jpg";
+    import Moses from "../../../../assets/Testimonials/moses.jpg";
     const Testimonials = [
         {
             content:
@@ -20,7 +21,7 @@
         {
             content:
 								"This is a realy great platform for gamers of all skill level to find like minded people. This is really useful especially for a up and coming region like India where Esports is still in its infancy. With time this site can be the huv for all eSports in India and help it reach new heights.",
-            profilePic: PesIsLife,
+            profilePic: Moses,
             profileName: "Wesley(@snakeeyes)",
             profileDetails: "Competitive Valorant Player",
         },

@@ -4,14 +4,14 @@
   const populateTable = [
     {
       rank: 1,
-      name: "Jenin",
+      name: "Harshath",
       country: "IND",
       points: 5000,
       team: "F1",
     },
     {
       rank: 2,
-      name: "Jenin",
+      name: "Gowtham",
       country: "IND",
       points: 4950,
       team: "F1",

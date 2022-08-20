@@ -6,13 +6,14 @@
 
   import Jenin from "../../../assets/Devs/jenin.jpg";
   import Raj from "../../../assets/Devs/rajaniraiyn.jpg";
-  
-  const iter = [1, 1, 1]
+  import Siyam from "../../../assets/Devs/siyam.jpeg";
+
 
   const data = [
     {
       img: Jenin,
       name: "Jenin Immanuel",
+      bio: "Full stack Developer | Aspiring Ethical Hacker | Tech pantomath",
       links: {
         portfolio: "https://jeninimmanuel.netlify.app/#",
         insta: "https://www.instagram.com/jeninimmanuel/",
@@ -22,7 +23,7 @@
     {
       img: Raj,
       name: "Rajaniraiyn",
-
+      bio: "Autodidact | Tech Enthusiast | Programming Polyglot | Erudite Web Dev",
       links: {
         portfolio: "https://rajaniraiyn.github.io/",
         insta: "https://www.instagram.com/rajaniraiyn/",
@@ -30,10 +31,11 @@
       }
     },
     {
-      img: Jenin,
+      img: Siyam,
       name: "Siyam Sundar",
+      bio: "Learner and Enthusiast | Learning web dev | Designer | Logic Solver",
       links: {
-        portfolio: "",
+        portfolio: "https://siyam333.github.io/portfolio-sample/",
         insta: "https://www.instagram.com/siyam_333/",
         linkedin: ""
       }
@@ -82,8 +84,9 @@
   }
 
   .cards-container {
-    display: flex;
     gap: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     height: auto;
     margin-top: 5em;
   }
