@@ -1,7 +1,7 @@
 <script lang="ts">
     // import Img from "../../../../assets/video-thumbnail.png";s
     import PlayButton from "../../../../assets/playbutton.svg";
-    import Video from "../../../../assets/dummy-video.mp4";
+    import Video from "../../../../assets/dummyvideo.mp4";
 
     let video: HTMLVideoElement;
     let playing = false;
