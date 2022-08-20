@@ -6,7 +6,7 @@
   import Footer from "../Home/components/Footer.svelte";
   import NavBar from "../Home/components/NavBar.svelte";
 
-  const content = `The Region of Tournaments was founded by a group of three enthustiastic web developers and passionate programmers from Kumaraguru College of Technology, Jenin Immanuel, Rajanirayin and Siyam Sundar who are doing their freshman year in KCT. The main motive of the developers is to develop a social media platform for gamers to showcase their skills and talents through eSports and tournmaents. This project is part of the PBL framework in our college, as our annual project.`;
+  const content = `The Region of Tournaments was founded by a group of three enthustiastic web developers and passionate programmers from Kumaraguru College of Technology, Jenin Immanuel, Rajaniraiyn and Siyam Sundar who are doing their freshman year in KCT. The main motive of the developers is to develop a social media platform for gamers to showcase their skills and talents through eSports and tournmaents. This project is part of the PBL framework in our college, as our annual project.`;
 </script>
 
 <div class="main">

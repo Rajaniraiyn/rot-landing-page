@@ -9,10 +9,12 @@
     <span>A dedicated platform for</span>
     <span class="gradient">Competitive gaming</span>
     <p>A Platform For All Gamers To Connect, Interact And Win More</p>
-    <Button hasIcon>
+    <a href="/profile">
+        <Button hasIcon>
         Let's go
         <img src={RightArrow} alt="right arrow" />
-    </Button>
+      </Button>
+    </a>
     <img src={down} alt="" class="scroll-to-down" />
 </header>
 
@@ -54,5 +56,9 @@
     .scroll-to-down {
         mix-blend-mode: lighten;
         -webkit-user-drag: none;
+    }
+
+    a {
+      text-decoration: none;
     }
 </style>

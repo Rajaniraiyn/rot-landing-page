@@ -5,7 +5,9 @@
 
   export let img: any
   export let name: String
+  export let bio: String
   export let links: any
+
 </script>
 
 <div class="wrapper">
@@ -14,6 +16,7 @@
   </div>
   <div class="contents">
     <h2>{name}<h2>
+    <div class="bio-content">{bio}</div>
     <div class="sm-containers">
       <a href={links.portfolio} target="_blank" data-tinro-ignore><img src={Cb} alt=""></a>
       <a href={links.insta} target="_blank" data-tinro-ignore><img src={Insta} alt=""></a>
@@ -70,10 +73,15 @@
     width: 10vw;
     height: 20vh;
     border-radius: 20px;
+    object-fit: cover;
   }
 
   .contents .sm-containers img {
     width: 5vw;
     height: 5vh;
+  }
+
+  .bio-content {
+    font-size: 1rem;
   }
 </style> 

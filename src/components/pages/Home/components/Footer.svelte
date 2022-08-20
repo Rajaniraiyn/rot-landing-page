@@ -23,10 +23,12 @@
 					ROT is a high-tech competitive gaming platform for all the gamers to showcase and establish their skills. ROT offers a stabilized platform to conduct and participate in the Esports events and other competitive gaming event categories like Speed running , PvP etc...ROT provides talented individuals who are experienced in their domain game to establish themselves in their field by getting paid to play for a team.
         </p>
         <div class="btn">
+          <a href="/profile">
             <Button hasIcon>
                 Let's go
                 <img src={RightArrow} alt="right arrow" />
             </Button>
+          </a>
         </div>
         <div class="imgs">
             <img src={linkdin} alt="" />
